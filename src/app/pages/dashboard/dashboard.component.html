@@ -1,0 +1,294 @@
+<!--begin::Main-->
+<div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+  <!--begin::Content wrapper-->
+  <div class="d-flex flex-column flex-column-fluid">
+    <!--begin::Content-->
+    <div id="kt_app_content" class="app-content flex-column-fluid">
+      <!--begin::Content container-->
+      <div id="kt_app_content_container" class="app-container container-xxl">
+        <!--begin::Layout-->
+        <div class="d-flex flex-column flex-xl-row">
+          <!--begin::Content-->
+          <div class="d-flex flex-row-fluid me-xl-9 mb-10 mb-xl-0">
+
+
+
+            <!--begin::Pos food-->
+            <div class="card card-flush card-p-0 bg-transparent border-0">
+              <!--begin::Body-->
+              <div class="card-body">
+
+                <!--begin::Tab Content-->
+                <div class="tab-content">
+                  <!--begin::Tap pane-->
+                  <div class="tab-pane fade show active" id="kt_pos_food_content_1">
+
+                    <!--begin::Navbar-->
+                    <div class="card mb-5 mb-xl-10">
+                      <div class="card-body pt-9 pb-0">
+                        <!--begin::Details-->
+                        <div class="d-flex flex-wrap flex-sm-nowrap mb-3">
+                          <!--begin: Pic-->
+                          <div class="me-7 mb-4">
+                            <div class="symbol symbol-100px symbol-lg-160px symbol-fixed position-relative">
+                              <img src="assets/media/avatars/300-1.jpg" alt="image" />
+                            </div>
+                          </div>
+                          <!--end::Pic-->
+                          <!--begin::Info-->
+                          <div class="flex-grow-1">
+                            <!--begin::Title-->
+                            <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                              <!--begin::User-->
+                              <div class="d-flex flex-column">
+                                <!--begin::Name-->
+                                <div class="d-flex align-items-center mb-2">
+                                  <a href="#"
+                                    class="text-gray-900 text-hover-primary fs-2 fw-bold me-1">{{familyProjectItem?.family?.arName}}</a>
+                                </div>
+                                <!--end::Name-->
+                                <!--begin::Info-->
+                                <div class="d-flex flex-wrap fw-semibold fs-6 mb-4 pe-2">
+                                  <a href="#"
+                                    class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2">
+                                    <!--begin::Svg Icon | path: icons/duotune/communication/com006.svg-->
+                                    <span class="svg-icon svg-icon-4 me-1">
+                                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3"
+                                          d="M16.5 9C16.5 13.125 13.125 16.5 9 16.5C4.875 16.5 1.5 13.125 1.5 9C1.5 4.875 4.875 1.5 9 1.5C13.125 1.5 16.5 4.875 16.5 9Z"
+                                          fill="currentColor" />
+                                        <path
+                                          d="M9 16.5C10.95 16.5 12.75 15.75 14.025 14.55C13.425 12.675 11.4 11.25 9 11.25C6.6 11.25 4.57499 12.675 3.97499 14.55C5.24999 15.75 7.05 16.5 9 16.5Z"
+                                          fill="currentColor" />
+                                        <rect x="7" y="6" width="4" height="4" rx="2" fill="currentColor" />
+                                      </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->{{familyProjectItem?.family?.idCard}}</a>
+                                </div>
+                                <!--end::Info-->
+                              </div>
+                              <!--end::User-->
+                            </div>
+                            <!--end::Title-->
+                            <!--begin::Stats-->
+                            <div class="d-flex flex-wrap flex-stack">
+                              <!--begin::Wrapper-->
+                              <div class="d-flex flex-column flex-grow-1 pe-8">
+                                <!--begin::Stats-->
+                                <div class="d-flex flex-wrap">
+                                  <!--begin::Stat-->
+                                  <div
+                                    class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                                    <!--begin::Number-->
+                                    <div class="d-flex align-items-center">
+                                      <div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="4500"
+                                        data-kt-countup-prefix="$">{{familyProjectItem?.project?.name}}</div>
+                                    </div>
+                                    <!--end::Number-->
+                                    <!--begin::Label-->
+                                    <div class="fw-semibold fs-6 text-gray-400">اسم المشروع</div>
+                                    <!--end::Label-->
+                                  </div>
+                                  <!--end::Stat-->
+                                  <!--begin::Stat-->
+                                  <div
+                                    class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                                    <!--begin::Number-->
+                                    <div class="d-flex align-items-center">
+                                      <div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="75">
+                                        {{familyProjectItem?.family?.address}}
+                                      </div>
+                                    </div>
+                                    <!--end::Number-->
+                                    <!--begin::Label-->
+                                    <div class="fw-semibold fs-6 text-gray-400">عنوان السكن الحالي</div>
+                                    <!--end::Label-->
+                                  </div>
+                                  <!--end::Stat-->
+                                  <!--begin::Stat-->
+                                  <div
+                                    class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                                    <!--begin::Number-->
+                                    <div class="d-flex align-items-center">
+
+                                      <div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="60"
+                                        data-kt-countup-prefix="%">{{familyProjectItem?.items?.length}}</div>
+                                    </div>
+                                    <!--end::Number-->
+                                    <!--begin::Label-->
+                                    <div class="fw-semibold fs-6 text-gray-400">عدد مواد المشروع</div>
+                                    <!--end::Label-->
+                                  </div>
+                                  <!--end::Stat-->
+                                </div>
+                                <!--end::Stats-->
+                              </div>
+                              <!--end::Wrapper-->
+
+                            </div>
+                            <!--end::Stats-->
+                          </div>
+                          <!--end::Info-->
+                        </div>
+                        <!--end::Details-->
+                      </div>
+                    </div>
+                    <!--end::Navbar-->
+                    <!--begin::Wrapper-->
+                    <div class="d-flex flex-wrap d-grid gap-5 gap-xxl-9">
+
+
+                      <!--begin::Card-->
+                      <div class="card card-flush flex-row-fluid p-6 pb-5 mw-100"
+                        *ngFor="let item of familyProjectItem?.items">
+                        <!--begin::Body-->
+                        <div class="card-body text-center">
+                          <img [src]="'https://api.ihh.kuarkz.com/uploads/'+item.photo "
+                            class="rounded-3 mb-4 w-150px h-150px w-xxl-200px h-xxl-200px" alt="" />
+                          <!--end::Food img-->
+                          <!--begin::Info-->
+                          <div class="mb-2">
+                            <!--begin::Title-->
+                            <div class="text-center">
+                              <span
+                                class="fw-bold text-gray-800 cursor-pointer text-hover-primary fs-3 fs-xl-1">{{item?.name}}</span>
+                              <span class="text-gray-400 fw-semibold d-block fs-6">القيمة الاجمالية المستحقة :
+                                {{item?.quantity}}
+                                كغ</span>
+                              <span class="text-gray-400 fw-semibold d-block fs-6">القيمة المستلمة سابقا :
+                                {{item?.totalDistributedQuantity}} كغ</span>
+                            </div>
+                            <!--end::Title-->
+                          </div>
+                          <!--end::Info-->
+                          <!--begin::Total-->
+                          <div class="position-relative d-flex align-items-center incr-disc-box">
+                            <!--begin::Increase control-->
+                            <button type="button" class="btn btn-icon btn-sm btn-light btn-icon-gray-400"
+                              (click)="increase(item.id)" data-kt-dialer-control="increase">
+                              <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+                              <span class="svg-icon svg-icon-3x">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1"
+                                    transform="rotate(-90 11 18)" fill="currentColor" />
+                                  <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                                </svg>
+                              </span>
+                              <!--end::Svg Icon-->
+                            </button>
+                            <!--end::Increase control-->
+
+                            <!--begin::Input control-->
+                            <input type="text"
+                              class="form-control border-0 text-center px-0 fs-3 fw-bold text-gray-800 w-30px"
+                              placeholder="Amount" readonly="readonly" value="{{getItemQuantity(item.id)}}" />
+                            <!--end::Input control-->
+                            <!--begin::Decrease control-->
+                            <button type="button" class="btn btn-icon btn-sm btn-light btn-icon-gray-400"
+                              (click)="decrease(item.id)" data-kt-dialer-control="decrease">
+                              <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
+                              <span class="svg-icon svg-icon-3x">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                                </svg>
+                              </span>
+                              <!--end::Svg Icon-->
+                            </button>
+                            <!--end::Decrease control-->
+                          </div>
+                          <!--end::Total-->
+                        </div>
+                        <!--end::Body-->
+                      </div>
+                      <!--end::Card-->
+
+                    </div>
+                    <!--end::Wrapper-->
+                  </div>
+                  <!--end::Tap pane-->
+
+                </div>
+                <!--end::Tab Content-->
+              </div>
+              <!--end: Card Body-->
+            </div>
+            <!--end::Pos food-->
+          </div>
+          <!--end::Content-->
+          <!--begin::Sidebar-->
+          <div class="flex-row-auto w-xl-425px">
+            <!--begin::Pos order-->
+            <div class="card card-flush bg-body" id="kt_pos_form">
+              <!--begin::Header-->
+              <div class="card-header pt-5">
+                <h5 class="card-title fw-bold text-gray-800">قائمة المستلمات</h5>
+              </div>
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body pt-0">
+                <!--begin::Table container-->
+                <div class="table-responsive mb-8">
+                  <!--begin::Table-->
+                  <table class="table align-middle gs-0 gy-4 my-0">
+                    <!--begin::Table head-->
+                    <thead>
+                      <tr>
+                        <th class="min-w-175px"></th>
+                        <th class="w-125px"></th>
+                        <th class="w-60px"></th>
+                      </tr>
+                    </thead>
+                    <!--end::Table head-->
+                    <!--begin::Table body-->
+                    <tbody>
+                      <tr data-kt-pos-element="item" data-kt-pos-item-price="33"
+                        *ngFor="let distItem of distributedItems">
+                        <td colspan="2" class="pe-0">
+                          <div class="d-flex align-items-center">
+                            <img [src]="'https://api.ihh.kuarkz.com/uploads/'+getItem(distItem.itemId)?.photo"
+                              class="w-50px h-50px rounded-3 me-3" alt="" />
+                            <span
+                              class="fw-bold text-gray-800 cursor-pointer text-hover-primary fs-6 me-1">{{getItem(distItem.itemId)?.name}}</span>
+                          </div>
+                        </td>
+
+                        <td class="text-center">
+                          <span class="fw-bold text-primary fs-2"
+                            data-kt-pos-element="item-total">{{distItem.distributedQuantity}}</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <!--end::Table body-->
+                  </table>
+                  <!--end::Table-->
+                </div>
+                <!--end::Table container-->
+
+                <!--begin::Payment Method-->
+                <div class="m-0">
+                  <!--begin::Actions-->
+                  <button class="btn fw-bold btn-success w-100" (click)="save()">حفظ</button>
+                  <!--end::Actions-->
+                </div>
+                <!--end::Payment Method-->
+              </div>
+              <!--end: Card Body-->
+            </div>
+            <!--end::Pos order-->
+          </div>
+          <!--end::Sidebar-->
+        </div>
+        <!--end::Layout-->
+      </div>
+      <!--end::Content container-->
+    </div>
+    <!--end::Content-->
+  </div>
+  <!--end::Content wrapper-->
+</div>
+<!--end:::Main-->
+<swal #noticeSwal [swalOptions]="swalOptions">
+</swal>

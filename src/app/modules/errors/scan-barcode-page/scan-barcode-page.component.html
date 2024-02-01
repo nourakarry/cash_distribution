@@ -1,0 +1,191 @@
+<div>
+  <h1 style="text-align: center;">قم بمسح الكود الموجود على بطاقة المستفيد </h1>
+
+  <ngx-scanner-qrcode class="qr-div" #action="scanner" [config]="config" (event)="onEvent($event)">
+  </ngx-scanner-qrcode>
+
+  <div class="text-center mt-3">
+    <button type="button" class="btn btn-sm btn-light-primary me-3" data-bs-toggle="tooltip" data-bs-placement="top"
+      title="Enable grid view" (click)="changeCamera()">
+      تغيير الكاميرا
+    </button>
+  </div>
+
+</div>
+<ng-template #formModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">معلومات المستفيد</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="close()"></button>
+  </div>
+  <div class="modal-body">
+    <!--begin::Main-->
+    <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+      <!--begin::Content wrapper-->
+      <div class="d-flex flex-column flex-column-fluid">
+        <!--begin::Content-->
+        <div id="kt_app_content" class="app-content flex-column-fluid">
+          <!--begin::Content container-->
+          <div id="kt_app_content_container" class="app-container container-xxl">
+            <!--begin::Layout-->
+            <div class="d-flex flex-column flex-xl-row">
+              <!--begin::Content-->
+              <div class="d-flex flex-row-fluid me-xl-9 mb-10 mb-xl-0">
+                <!--begin::Pos food-->
+                <div class="card card-flush card-p-0 bg-transparent border-0">
+                  <!--begin::Body-->
+                  <div class="card-body">
+
+                    <!--begin::Tab Content-->
+                    <div class="tab-content">
+                      <!--begin::Tap pane-->
+                      <div class="tab-pane fade show active" id="kt_pos_food_content_1">
+
+                        <!--begin::Navbar-->
+                        <div class="card mb-5 mb-xl-10">
+                          <div class="card-body pt-9 pb-0">
+                            <!--begin::Details-->
+                            <div class="d-flex flex-wrap flex-sm-nowrap mb-3">
+
+                              <!--begin::Info-->
+                              <div class="flex-grow-1">
+                                <!--begin::Title-->
+                                <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                                  <!--begin::User-->
+                                  <div class="d-flex flex-column">
+                                    <!--begin::Name-->
+                                    <div class="d-flex align-items-center mb-2">
+                                      <a href="#"
+                                        class="text-gray-900 text-hover-primary fs-2 fw-bold me-1">{{familyProjectItem?.family?.arName}}</a>
+                                    </div>
+                                    <!--end::Name-->
+                                    <!--begin::Info-->
+                                    <div class="d-flex flex-wrap fw-semibold fs-6 mb-4 pe-2">
+                                      <a href="#"
+                                        class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2">
+                                        <!--begin::Svg Icon | path: icons/duotune/communication/com006.svg-->
+                                        <span class="svg-icon svg-icon-4 me-1">
+                                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.3"
+                                              d="M16.5 9C16.5 13.125 13.125 16.5 9 16.5C4.875 16.5 1.5 13.125 1.5 9C1.5 4.875 4.875 1.5 9 1.5C13.125 1.5 16.5 4.875 16.5 9Z"
+                                              fill="currentColor" />
+                                            <path
+                                              d="M9 16.5C10.95 16.5 12.75 15.75 14.025 14.55C13.425 12.675 11.4 11.25 9 11.25C6.6 11.25 4.57499 12.675 3.97499 14.55C5.24999 15.75 7.05 16.5 9 16.5Z"
+                                              fill="currentColor" />
+                                            <rect x="7" y="6" width="4" height="4" rx="2" fill="currentColor" />
+                                          </svg>
+                                        </span>
+                                        <!--end::Svg Icon-->{{familyProjectItem?.family?.idCard}}</a>
+                                    </div>
+                                    <!--end::Info-->
+                                  </div>
+                                  <!--end::User-->
+                                </div>
+                                <!--end::Title-->
+                                <!--begin::Stats-->
+                                <div class="d-flex flex-wrap flex-stack">
+                                  <!--begin::Wrapper-->
+                                  <div class="d-flex flex-column flex-grow-1 pe-8">
+                                    <!--begin::Stats-->
+                                    <div class="d-flex flex-wrap">
+
+                                      <!--begin::Stat-->
+                                      <div
+                                        class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                                        <!--begin::Number-->
+                                        <div class="d-flex align-items-center">
+                                          <div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="75">
+                                            {{familyProjectItem?.family?.address}}
+                                          </div>
+                                        </div>
+                                        <!--end::Number-->
+                                        <!--begin::Label-->
+                                        <div class="fw-semibold fs-6 text-gray-400">عنوان السكن الحالي</div>
+                                        <!--end::Label-->
+                                      </div>
+                                      <!--end::Stat-->
+                                    </div>
+                                    <!--end::Stats-->
+                                  </div>
+                                  <!--end::Wrapper-->
+
+                                </div>
+                                <!--end::Stats-->
+                              </div>
+                              <!--end::Info-->
+                            </div>
+                            <!--end::Details-->
+                          </div>
+                        </div>
+                        <!--end::Navbar-->
+                        <!--begin::Wrapper-->
+                        <div class="d-flex flex-wrap d-grid gap-5 gap-xxl-9">
+
+
+                          <!--begin::Card-->
+                          <div class="card card-flush flex-row-fluid p-6 pb-5 mw-100"
+                            *ngFor="let item of familyProjectItem?.items">
+                            <!--begin::Body-->
+                            <div class="card-body text-center">
+                              <div class="dollar-amount">{{item?.name}}</div>
+                              <!--end::Food img-->
+                              <!--begin::Info-->
+                              <div class="mb-2">
+                                <!--begin::Title-->
+                                <div class="text-center">
+                                  <span class="text-gray-400 fw-semibold d-block fs-6">الدفعات الاجمالية المستحقة :
+                                    {{item?.quantity}}
+                                    دفعات</span>
+                                  <span class="text-gray-400 fw-semibold d-block fs-6">الدفعات المستلمة سابقا :
+                                    {{item?.totalDistributedQuantity}} دفعات</span>
+                                </div>
+                                <!--end::Title-->
+                              </div>
+                              <!--end::Info-->
+                              <!--begin::Total-->
+                              <div class="position-relative d-flex align-items-center incr-disc-box">
+                                <!--begin::Actions-->
+                                <button class="btn fw-bold btn-success w-100" (click)="save()" [disabled]="item.totalDistributedQuantity > 1 || isSubmited">تاكيد استلام الدفعة</button>
+                                <!--end::Actions-->
+                              </div>
+                            </div>
+                            <!--end::Body-->
+                          </div>
+                          <!--end::Card-->
+
+                        </div>
+                        <!--end::Wrapper-->
+                      </div>
+                      <!--end::Tap pane-->
+
+                    </div>
+                    <!--end::Tab Content-->
+                  </div>
+                  <!--end: Card Body-->
+                </div>
+                <!--end::Pos food-->
+              </div>
+              <!--end::Content-->
+            </div>
+            <!--end::Layout-->
+          </div>
+          <!--end::Content container-->
+        </div>
+        <!--end::Content-->
+      </div>
+      <!--end::Content wrapper-->
+    </div>
+    <!--end:::Main-->
+  </div>
+  <div class="modal-footer flex-center">
+    <!--begin::Button-->
+    <button type="reset" id="kt_modal_update_customer_cancel" class="btn btn-light me-3"
+      (click)="close()">
+      اغلاق
+    </button>
+    <!--end::Button-->
+  </div>
+</ng-template>
+
+<swal #noticeSwal [swalOptions]="swalOptions">
+</swal>

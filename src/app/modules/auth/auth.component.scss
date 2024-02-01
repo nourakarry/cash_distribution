@@ -1,0 +1,13 @@
+:host {
+  height: 100%;
+}
+@media (min-width: 992px) {
+  .w-276px{
+    width: 275px !important;
+  }
+}
+@media (max-width: 991px) {
+  .w-276px{
+    width: 150px !important;
+  }
+}

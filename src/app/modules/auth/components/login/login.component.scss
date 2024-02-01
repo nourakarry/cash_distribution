@@ -1,0 +1,21 @@
+:host {
+  width: 100%;
+  @media (min-width: 992px) {
+    .min-width400px {
+      min-width: 400px;
+    }
+    .login-form {
+      width: 100%;
+      max-width: 450px;
+
+      .mat-form-field {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .min-width400px {
+    min-width: 300px;
+  }
+}

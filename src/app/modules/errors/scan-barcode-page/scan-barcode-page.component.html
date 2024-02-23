@@ -138,6 +138,9 @@
                                     دفعات</span>
                                   <span class="text-gray-400 fw-semibold d-block fs-6">الدفعات المستلمة سابقا :
                                     {{item?.totalDistributedQuantity}} دفعات</span>
+                                    <span class="text-danger fw-semibold d-block fs-6" *ngIf="item.totalDistributedQuantityWithMonth > 0">
+                                      لقد قام باستلام المبلغ لهذا الشهر
+                                    </span>
                                 </div>
                                 <!--end::Title-->
                               </div>
@@ -145,7 +148,7 @@
                               <!--begin::Total-->
                               <div class="position-relative d-flex align-items-center incr-disc-box">
                                 <!--begin::Actions-->
-                                <button class="btn fw-bold btn-success w-100" (click)="save()" [disabled]="item.totalDistributedQuantity > 1 || isSubmited">تاكيد استلام الدفعة</button>
+                                <button class="btn fw-bold btn-success w-100" (click)="save()" [disabled]="item.totalDistributedQuantityWithMonth > 0 || isSubmited">تاكيد استلام الدفعة</button>
                                 <!--end::Actions-->
                               </div>
                             </div>

@@ -25,4 +25,6 @@ export class Item {
   quantity: number;
   subCategory: string;
   totalDistributedQuantity: number;
+  totalDistributedQuantityWithDate: number;
+  totalDistributedQuantityWithMonth: number;
 }
